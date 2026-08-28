@@ -1,12 +1,18 @@
 # make a spiral
+# importing
 import turtle as t
 import math
-# defining variables
+# turtle config
 t.speed(0)
-a = .5
+t.shapesize(.25)
+t.shape('circle')
+
+# variables
+a = 5
 theta = 0
 
-for i in range(3600):
+# a loop that makes the turtle go
+for i in range(1800):
     r = a * theta
     x = r * math.cos(theta)
     y = r * math.sin(theta)
