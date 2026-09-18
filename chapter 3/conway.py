@@ -18,7 +18,7 @@ def randomGrid(N):
 def addGlider(i, j, grid):
     """adds a glider with top left cell at (i, j)"""
     glider = np.array([[0,    0, 255], 
-                       [255,  0, 255], 
+                       [0,  0, 0], 
                        [0,  255, 255]])
     grid[i:i+3, j:j+3] = glider
 
